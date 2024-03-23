@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array traversing</title>
+</head>
+<body>
+
+
+<input type="text" name="input" id="element">
+<button onclick="getElement()">Get Element</button>
+
+
+<script>
+    let data = [24,556,65,78,34,90,21,13,35,64,9];
+
+    // Array traversing and accessing array elements
+
+    function getElement(){
+        let el = document.getElementById('element').value;
+        if(el < data.length && typeof parseInt(el) ==='number' ){
+            alert(data[el])
+        }else {
+            alert("Element not found please inter valid input")
+        }
+
+
+    }
+
+
+    // Array traversing
+
+    // for(let i = 0; i<data.length; i++){
+    //     document.write(data[i]+"<br>");
+    //
+    // }
+
+    // let x = 3;
+    // document.write(data[x] + "<br>");
+
+
+
+
+</script>
+
+</body>
+</html>
